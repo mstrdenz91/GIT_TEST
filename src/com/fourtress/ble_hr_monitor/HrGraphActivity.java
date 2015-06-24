@@ -82,17 +82,9 @@ public class HrGraphActivity extends AbstractBleActivity
 			enableBleIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP );
 			startActivity( enableBleIntent );
 		}
-		else if( cmd.equalsIgnoreCase( "Device_Found" ) )
-		{
-			//Toast.makeText( this, "RFduino Found!", Toast.LENGTH_LONG ).show();
-		}
 		else if( cmd.equalsIgnoreCase( "Device_Connected" ) )
 		{
 			//Toast.makeText( this, "RFduino Connected!", Toast.LENGTH_LONG ).show();
-		}
-		else if( cmd.equalsIgnoreCase( "Device_Disconnected" ) )
-		{
-			//Toast.makeText( this, "RFduino Disconnected!", Toast.LENGTH_LONG ).show();
 		}
 		else if( cmd.startsWith( "Data_Read" ) )
 		{
