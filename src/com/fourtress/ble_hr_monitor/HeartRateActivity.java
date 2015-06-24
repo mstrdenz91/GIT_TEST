@@ -41,7 +41,10 @@ public class HeartRateActivity extends AbstractBleActivity
 	}
 	
 
-
+	protected void onEvent()
+	{
+		// TODO: implement
+	}
 
 	@Override
 	protected void onResume() 
