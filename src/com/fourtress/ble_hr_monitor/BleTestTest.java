@@ -94,26 +94,6 @@ public class BleTestTest extends Activity implements OnClickListener
 		deviceRSSIText.setText( Integer.toString( rssi ) );
 		connectButton.setEnabled(true);
 	}
-	
-	public void bleDataReadCallback( byte receivedByte )
-	{
-		receiveVal = receivedByte;
-	}
-	
-	private void toggleScan()
-	{
-		scanning = !scanning;
-		if( scanning )
-		{
-			scanDevicesButton.setText("Stop Scan");
-			bleHandler.startScan();
-		}
-		else
-		{
-			scanDevicesButton.setText("Start Scan");
-			bleHandler.stopScan();
-		}
-	}
     
 	private void connectToDevice()
 	{
@@ -122,12 +102,6 @@ public class BleTestTest extends Activity implements OnClickListener
 		{
 			toggleButton.setEnabled( true );
 		}
-	}
-
-	private void toggleRemoteLED()
-	{
-		sendVal[0] ^= 1;
-		bleHandler.sendRFduinoData( sendVal );
 	}
 	
 	private void readIncomingData()
