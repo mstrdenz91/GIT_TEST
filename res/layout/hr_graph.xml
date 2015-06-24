@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="25dp"
+		android:orientation="horizontal" >
+        
+	    <TextView
+	        android:id="@+id/tvRSSILabel_Graph"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="RFduino Signal Strength: "
+	        android:textColor="@android:color/darker_gray"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+		<TextView
+	        android:id="@+id/tvRSSI_Graph"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="@android:color/darker_gray"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	        android:id="@+id/tvHR_BPM"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="50dp"
+	        android:textColor="@android:color/holo_red_dark" 
+	        android:textSize="50dp"/>
+
+	</LinearLayout>
+	
+
+    <!--
+    <TextView
+        android:id="@+id/textView1_Graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Heart Rate:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/tvHeartRate_Graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    -->
+    
+    <LinearLayout
+        android:id="@+id/llGraphID"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="25dp"
+		android:orientation="horizontal" >
+		
+	</LinearLayout>
+    
+    
+</LinearLayout>

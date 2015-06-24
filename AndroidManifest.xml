@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fourtress.ble_hr_monitor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ 
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ble_icon2"
+        android:label="@string/app_titlebar_main"
+        android:theme="@android:style/Theme.Holo" >
+        <activity
+            android:name="com.fourtress.ble_hr_monitor.HeartRateActivity"
+            android:label="@string/app_titlebar_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.fourtress.ble_hr_monitor.SettingsActivity"
+            android:label="@string/app_titlebar_settings" >
+            <intent-filter>
+                <action android:name="com.fourtress.ble_hr_monitor.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fourtress.ble_hr_monitor.HrGraphActivity"
+            android:label="@string/app_titlebar_hrgraph" >
+            <intent-filter>
+                <action android:name="com.fourtress.ble_hr_monitor.HRGRAPH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+		    android:name="com.fourtress.ble_hr_monitor.About"
+		    android:label="HeartRate Monitor V0.1"
+		    android:theme="@android:style/Theme.Dialog" >
+		    <intent-filter>
+		        <action android:name="com.fourtress.ble_hr_monitor.ABOUT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+		</activity>
+        <service
+			android:name="com.fourtress.ble_hr_monitor.BleService" 
+			android:enabled= "true" >
+		</service> 
+        <receiver android:name="MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.fourtress.ble_hr_monitor.MyBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
