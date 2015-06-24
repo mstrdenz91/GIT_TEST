@@ -32,6 +32,11 @@ public class HeartRateActivity extends AbstractBleActivity
 		HeartRate.setText( "..." );
 	}
 	
+	public void feature2()
+	{
+		
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 
 	{

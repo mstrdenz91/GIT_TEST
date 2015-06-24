@@ -35,6 +35,11 @@ public class HrGraphActivity extends AbstractBleActivity
 	
 	boolean freeView = false;
 	
+	public void feature3()
+	{
+		
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{

@@ -45,10 +45,6 @@ public class BleTestTest extends Activity implements OnClickListener
 		super.onPause();
 		bleHandler.disconnect();
 	}
-	
-	void feature1{}
-	
-	
 
 	@Override
 	public void onClick(View view) 
