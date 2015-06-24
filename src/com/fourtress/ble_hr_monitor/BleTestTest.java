@@ -95,6 +95,11 @@ public class BleTestTest extends Activity implements OnClickListener
 		connectButton.setEnabled(true);
 	}
     
+	public void Feature1()
+	{
+		int hoi=0;
+	}
+	
 	private void connectToDevice()
 	{
 		boolean connected = bleHandler.connect( "RFduino" );
